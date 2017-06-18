@@ -1,0 +1,3 @@
+[submodule "lib/jdksmidi"]
+	path = lib/jdksmidi
+	url = https://github.com/jdkoftinoff/jdksmidi
