@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+find_package(RtMidi)
+if(RTMIDI_FOUND)
+  include_directories(${RTMIDI_INCLUDE_DIR})
+  add_executable(jdksmidi-midimessagelogger jdksmidi-MIDIMessageLogger.cpp)
+  target_link_libraries(jdksmidi-midimessagelogger ${RTMIDI_LIBRARY} jdksmidi)
+endif()
