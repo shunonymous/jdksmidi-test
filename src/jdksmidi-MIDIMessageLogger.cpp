@@ -76,9 +76,9 @@ int main()
 	for(i=0;i<nBytes;i++)
 	{
 	    Parser.Parse(message[i], &MidiInData);
-	    MidiInData.MsgToText(MIDIMessage);
-	    std::cout << MIDIMessage << "\r" << std::flush;
 	}
+	MidiInData.MsgToText(MIDIMessage);
+	std::cout << MIDIMessage << "\n" << std::flush;
 	sleep(10us);
     }
 
